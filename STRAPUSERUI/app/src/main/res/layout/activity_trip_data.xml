@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_td_page"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.asus.strapuserui.TripData">
+
+    <include layout="@layout/toolbar"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/ttl"
+        android:background="@color/colorButtonText"
+        android:padding="20dp">
+        <TableRow android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_code"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_trip_code"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+        <TableRow android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_from_loc"
+                android:textSize="20sp"
+                android:text="BANGALORE"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+        <TableRow android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_to_loc"
+                android:textSize="20sp"
+                android:text="CHENNAI"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+        <TableRow android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_qty"
+                android:textSize="20sp"
+                android:text="50"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ttl"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TableRow>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_start_trip"
+                style="@style/themeButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/start_trip"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_cancel_trip"
+                style="@style/themeButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/cancel_trip"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

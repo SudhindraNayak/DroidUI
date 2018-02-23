@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">STRAP UI</string>
+    <string name="header_background">Header_background</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="search">Search</string>
+</resources>
