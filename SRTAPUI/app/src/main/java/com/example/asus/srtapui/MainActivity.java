@@ -1,6 +1,7 @@
 package com.example.asus.srtapui;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         switch (id){
+            case R.id.fence_id:Intent intent =new Intent(getApplicationContext(),GeoFence.class);
+                startActivity(intent);
+                break;
             case R.id.notify_id:Toast.makeText(getApplicationContext(),"Notify",Toast.LENGTH_LONG).show();
                 break;
             case R.id.add_trip_id:Toast.makeText(getApplicationContext(),"Add Trips",Toast.LENGTH_LONG).show();
