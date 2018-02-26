@@ -14,4 +14,5 @@
     <string name="stop_trip">Stop Trip</string>
     <string name="pause_trip">Pause Trip</string>
     <string name="trip_over">You have completed your trip</string>
+    <string name="title_activity_trip_tracking">Map</string>
 </resources>
